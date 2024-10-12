@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Typography"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Typography"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Font Family</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#fontFamily">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="media">
+                                                    <div class="ms-3 me-4">
+                                                        <h1 class="display-4 mb-0 ff-primary">Aa</h1>
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <p class="mb-2">Font Family Primary</p>
+                                                        <h5 class="mb-0 ff-primary">"system-ui, -apple-system"
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-6">
+                                                <div class="media">
+                                                    <div class="ms-3 me-4">
+                                                        <h1 class="display-4 mb-0">Aa</h1>
+                                                    </div>
+                                                    <div class="media-body align-self-center">
+                                                        <p class="mb-2">Font Family Secondary</p>
+                                                        <h5 class="mb-0">"Roboto", sans-serif</h5>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="fontFamily">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardTypograpy"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardTypograpy">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;media&quot;&gt;
+            &lt;div class=&quot;ms-3 me-4&quot;&gt;
+                &lt;h1 class=&quot;display-4 mb-0 ff-primary&quot;&gt;Aa&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;media-body align-self-center&quot;&gt;
+                &lt;p class=&quot;mb-2&quot;&gt;Font Family Primary&lt;/p&gt;
+                &lt;h5 class=&quot;mb-0 ff-primary&quot;&gt;&quot;system-ui, -apple-system&quot;&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;media&quot;&gt;
+            &lt;div class=&quot;ms-3 me-4&quot;&gt;
+                &lt;h1 class=&quot;display-4 mb-0&quot;&gt;Aa&lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;media-body align-self-center&quot;&gt;
+                &lt;p class=&quot;mb-2&quot;&gt;Font Family Secondary&lt;/p&gt;
+                &lt;h5 class=&quot;mb-0&quot;&gt;&quot;Roboto&quot;, sans-serif&lt;/h5&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Heading</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#Heading">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end header -->
+                                    <div class="card-body">
+                                        <div>
+                                            <h1 class="mb-3">h1. Bootstrap heading <small
+                                                    class="text-muted">2.25rem (36px)</small></h1>
+
+                                            <h2 class="mb-3">h2. Bootstrap heading <small
+                                                    class="text-muted">1.8rem (28.8px)</small></h2>
+
+                                            <h3 class="mb-3">h3. Bootstrap heading <small
+                                                    class="text-muted">1.575rem (25.2px)</small></h3>
+
+                                            <h4 class="mb-3">h4. Bootstrap heading <small
+                                                    class="text-muted">1.35rem (21.6px)</small></h4>
+
+                                            <h5 class="mb-3">h5. Bootstrap heading <small
+                                                    class="text-muted">1.125rem (18px)</small></h5>
+
+                                            <h6 class="mb-0">h6. Bootstrap heading <small
+                                                    class="text-muted">0.9rem (14.4px)</small></h6>
+                                        </div>
+
+                                        <div class="collapse" id="Heading">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardHeading"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardHeading">&lt;div&gt;
+    &lt;h1 class=&quot;mb-3&quot;&gt;h1. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;2.25rem (36px)&lt;/small&gt;&lt;/h1&gt;
+
+    &lt;h2 class=&quot;mb-3&quot;&gt;h2. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;1.8rem (28.8px)&lt;/small&gt;&lt;/h2&gt;
+
+    &lt;h3 class=&quot;mb-3&quot;&gt;h3. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;1.575rem (25.2px)&lt;/small&gt;&lt;/h3&gt;
+
+    &lt;h4 class=&quot;mb-3&quot;&gt;h4. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;1.35rem (21.6px)&lt;/small&gt;&lt;/h4&gt;
+
+    &lt;h5 class=&quot;mb-3&quot;&gt;h5. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;1.125rem (18px)&lt;/small&gt;&lt;/h5&gt;
+
+    &lt;h6&gt;h6. Bootstrap heading &lt;small class=&quot;text-muted&quot;&gt;0.9rem (14.4px)&lt;/small&gt;&lt;/h6&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Display Headings</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#DisplayHeading">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div>
+                                            <h1 class="display-1">Display 1</h1>
+                                            <h1 class="display-2">Display 2</h1>
+                                            <h1 class="display-3">Display 3</h1>
+                                            <h1 class="display-4">Display 4</h1>
+                                            <h1 class="display-5">Display 5</h1>
+                                            <h1 class="display-6 mb-0">Display 6</h1>
+                                        </div>
+
+                                        <div class="collapse" id="DisplayHeading">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardDisplayheading"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardDisplayheading">&lt;div&gt;
+    &lt;h1 class=&quot;display-1&quot;&gt;Display 1&lt;/h1&gt;
+    &lt;h1 class=&quot;display-2&quot;&gt;Display 2&lt;/h1&gt;
+    &lt;h1 class=&quot;display-3&quot;&gt;Display 3&lt;/h1&gt;
+    &lt;h1 class=&quot;display-4&quot;&gt;Display 4&lt;/h1&gt;
+    &lt;h1 class=&quot;display-5&quot;&gt;Display 5&lt;/h1&gt;
+    &lt;h1 class=&quot;display-6 mb-0&quot;&gt;Display 6&lt;/h1&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Blockquotes</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#Blockquote">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div>
+                                                    <blockquote class="blockquote font-size-16 mb-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                            elit. Integer posuere erat a ante.</p>
+                                                        <footer class="blockquote-footer mt-2">Someone famous in
+                                                            <cite title="Source Title">Source Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-6">
+                                                <div class="mt-4 mt-lg-0">
+                                                    <blockquote
+                                                        class="blockquote  blockquote-reverse font-size-16 mb-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                            elit. Integer posuere erat a ante.</p>
+                                                        <footer class="blockquote-footer mt-2">Someone famous in
+                                                            <cite title="Source Title">Source Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="Blockquote">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardBlockquote"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardBlockquote">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-6&quot;&gt;
+        &lt;div&gt;
+            &lt;blockquote class=&quot;blockquote font-size-16 mb-0&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                &lt;footer class=&quot;blockquote-footer mt-2&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+                &lt;/footer&gt;
+            &lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-6&quot;&gt;
+            &lt;div class=&quot;mt-4 mt-lg-0&quot;&gt;
+                &lt;blockquote class=&quot;blockquote  blockquote-reverse font-size-16 mb-0&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer mt-2&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+                    &lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Blockquote Background Color</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#blockquoteBackground">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end cardheader -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Primary</h4>
+                                                        <blockquote class="blockquote custom-blockpuote blockpuote-primary rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Success</h4>
+                                                        <blockquote  class="blockquote custom-blockpuote blockpuote-success rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Danger</h4>
+                                                        <blockquote
+                                                            class="blockquote custom-blockpuote blockpuote-danger rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite
+                                                                    title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Info</h4>
+                                                        <blockquote
+                                                            class="blockquote custom-blockpuote blockpuote-info rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite
+                                                                    title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Warning</h4>
+                                                        <blockquote
+                                                            class="blockquote custom-blockpuote blockpuote-warning rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite
+                                                                    title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Secondary</h4>
+                                                        <blockquote class="blockquote custom-blockpuote blockpuote-secondary rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite
+                                                                    title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Dark</h4>
+                                                        <blockquote class="blockquote custom-blockpuote blockpuote-dark rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Light</h4>
+                                                        <blockquote
+                                                            class="blockquote custom-blockpuote blockpuote-light rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer
+                                                                class="blockquote-footer text-dark font-size-13 mt-2">
+                                                                Angie Burt <cite
+                                                                    title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4 col-md-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-3">Blockquotes Purple</h4>
+                                                        <blockquote
+                                                            class="blockquote custom-blockpuote blockpuote-purple rounded mb-0">
+                                                            <p class="font-size-14 text-dark mb-2">At vero eos
+                                                                et accusamus dignissimos ducimus blanditiis.</p>
+                                                            <footer class="blockquote-footer font-size-13 mt-2">
+                                                                Angie Burt <cite title="Source Title">Designer</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="blockquoteBackground">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardBlockquoteColors"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardBlockquoteColors">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;                                                    
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;&lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Primary&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-primary rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;     
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Success&lt;/h4&gt;                                  
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-success rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Danger&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-danger rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Info&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-info rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Warning&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-warning rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Secondary&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-secondary rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Dark&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-dark rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Light&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-light rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer text-dark font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4 col-md-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-3&quot;&gt;Blockquotes Purple&lt;/h4&gt;
+                &lt;blockquote class=&quot;blockquote custom-blockpuote blockpuote-purple rounded mb-0&quot;&gt;
+                    &lt;p class=&quot;font-size-14 text-dark mb-2&quot;&gt;At vero eos et accusamus dignissimos ducimus blanditiis.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-13 mt-2&quot;&gt; Angie Burt &lt;cite title=&quot;Source Title&quot;
+                    &gt;Designer&lt;/cite&gt;&lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Description List Alignment</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#descList">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div>
+                                            <dl class="row mb-0">
+                                                <dt class="col-sm-3">Description lists</dt>
+                                                <dd class="col-sm-9">A description list is perfect for defining
+                                                    terms.</dd>
+                                                <dt class="col-sm-3">Euismod</dt>
+                                                <dd class="col-sm-9">Vestibulum id ligula porta felis euismod
+                                                    semper eget lacinia odio sem nec elit.</dd>
+                                                <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta
+                                                    gravida at eget metus.</dd>
+                                                <dt class="col-sm-3">Malesuada porta</dt>
+                                                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis
+                                                    euismod.</dd>
+                                                <dt class="col-sm-3 text-truncate">Truncated term is truncated
+                                                </dt>
+                                                <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo,
+                                                    tortor mauris condimentum nibh, ut fermentum massa justo sit
+                                                    amet risus.</dd>
+                                                <dt class="col-sm-3">Nesting</dt>
+                                                <dd class="col-sm-9 mb-0">
+                                                    <dl class="row mb-0">
+                                                        <dt class="col-sm-4">Nested definition list</dt>
+                                                        <dd class="col-sm-8">Aenean posuere, tortor sed cursus
+                                                            feugiat, nunc augue blandit nunc.</dd>
+                                                    </dl>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                        <div class="collapse" id="descList">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardDescriptionList"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardDescriptionList">&lt;div&gt;
+    &lt;dl class=&quot;row mb-0&quot;&gt;
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Description lists&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;A description list is perfect for defining terms.&lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Euismod&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.&lt;/dd&gt;
+        &lt;dd class=&quot;col-sm-9 offset-sm-3&quot;&gt;Donec id elit non mi porta gravida at eget metus.&lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Malesuada porta&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3 text-truncate&quot;&gt;Truncated term is truncated&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa 
+        justo sit amet risus.&lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Nesting&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9 mb-0&quot;&gt;
+            &lt;dl class=&quot;row mb-0&quot;&gt;
+                &lt;dt class=&quot;col-sm-4&quot;&gt;Nested definition list&lt;/dt&gt;
+                &lt;dd class=&quot;col-sm-8&quot;&gt;Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.&lt;/dd&gt;
+            &lt;/dl&gt;
+        &lt;/dd&gt;
+    &lt;/dl&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1"> 
+                                                <h4 class="card-title">Inline Text Elements</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#InlineText">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="lead">
+                                                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+                                                auctor.
+                                            </p>
+                                            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                            <p><del>This line of text is meant to be treated as deleted
+                                                    text.</del></p>
+                                            <p><s>This line of text is meant to be treated as no longer
+                                                    accurate.</s></p>
+                                            <p><ins>This line of text is meant to be treated as an addition to
+                                                    the document.</ins></p>
+                                            <p><u>This line of text will render as underlined</u></p>
+                                            <p><small>This line of text is meant to be treated as fine
+                                                    print.</small></p>
+                                            <p><strong>This line rendered as bold text.</strong></p>
+                                            <p class="mb-0"><em>This line rendered as italicized text.</em></p>
+                                        </div>
+                                        <div class="collapse" id="InlineText">
+                                            <div class=" mt-3">
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardInlinetext"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardInlinetext">&lt;div&gt;
+    &lt;p class=&quot;lead&quot;&gt;
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+    &lt;/p&gt;
+    &lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+    &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
+    &lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Unstyled and Inline List</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#unstyledList">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul class="list-unstyled mb-0">
+                                                    <li>Integer molestie lorem at massa</li>
+                                                    <li>Nulla volutpat aliquam velit
+                                                        <ul>
+                                                            <li>Phasellus iaculis neque</li>
+                                                            <li>Purus sodales ultricies</li>
+                                                            <li>Vestibulum laoreet porttitor sem</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Faucibus porta lacus fringilla vel</li>
+                                                </ul>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-6">
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item">Lorem ipsum</li>
+                                                    <li class="list-inline-item">Phasellus iaculis</li>
+                                                    <li class="list-inline-item">Nulla volutpat</li>
+                                                </ul>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="unstyledList">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardUnstyled"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardUnstyled">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;ul class=&quot;list-unstyled mb-0&quot;&gt;
+            &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+            &lt;li&gt;Nulla volutpat aliquam velit
+                &lt;ul&gt;
+                    &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+                    &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+                    &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;ul class=&quot;list-inline mb-0&quot;&gt;
+            &lt;li class=&quot;list-inline-item&quot;&gt;Lorem ipsum&lt;/li&gt;
+            &lt;li class=&quot;list-inline-item&quot;&gt;Phasellus iaculis&lt;/li&gt;
+            &lt;li class=&quot;list-inline-item&quot;&gt;Nulla volutpat&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

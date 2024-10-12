@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Grid"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Grid"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Grid Options</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#gridOptions">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped table-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col" class="text-center">
+                                                            xs<br>
+                                                            <span class="fw-normal">&lt;576px</span>
+                                                        </th>
+                                                        <th scope="col" class="text-center">
+                                                            sm<br>
+                                                            <span class="fw-normal">≥576px</span>
+                                                        </th>
+                                                        <th scope="col" class="text-center">
+                                                            md<br>
+                                                            <span class="fw-normal">≥768px</span>
+                                                        </th>
+                                                        <th scope="col" class="text-center">
+                                                            lg<br>
+                                                            <span class="fw-normal">≥992px</span>
+                                                        </th>
+                                                        <th scope="col" class="text-center">
+                                                            xl<br>
+                                                            <span class="fw-normal">≥1200px</span>
+                                                        </th>
+                                                        <th scope="col" class="text-center">
+                                                            xxl<br>
+                                                            <span class="fw-normal">≥1400px</span>
+                                                        </th>
+                                                    </tr>
+                                                </thead><!-- end thead -->
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Grid behavior</th>
+                                                        <td>Horizontal at all times</td>
+                                                        <td colspan="5">Collapsed to start, horizontal above
+                                                            breakpoints</td>
+                                                    </tr><!-- end tr-->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Max container width
+                                                        </th>
+                                                        <td>None (auto)</td>
+                                                        <td>540px</td>
+                                                        <td>720px</td>
+                                                        <td>960px</td>
+                                                        <td>1140px</td>
+                                                        <td>1320px</td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Class prefix</th>
+                                                        <td><code>.col-</code></td>
+                                                        <td><code>.col-sm-</code></td>
+                                                        <td><code>.col-md-</code></td>
+                                                        <td><code>.col-lg-</code></td>
+                                                        <td><code>.col-xl-</code></td>
+                                                        <td><code>.col-xxl-</code></td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row"># of columns</th>
+                                                        <td colspan="6">12</td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Gutter width</th>
+                                                        <td colspan="6">24px (12px on each side of a column)
+                                                        </td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Custom gutters</th>
+                                                        <td colspan="6">Yes</td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Nestable</th>
+                                                        <td colspan="6">Yes</td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Offsets</th>
+                                                        <td colspan="6">Yes</td>
+                                                    </tr><!-- end tr -->
+                                                    <tr>
+                                                        <th class="text-nowrap" scope="row">Column ordering</th>
+                                                        <td colspan="6">Yes</td>
+                                                    </tr><!-- end tr -->
+                                                </tbody><!-- end tbody -->
+                                            </table><!-- end table -->
+                                        </div><!-- end table responsive -->
+
+                                        <div class="collapse" id="gridOptions">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardGridOptions"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardGridOptions">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-bordered table-striped table-nowrap mb-0&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;col&quot;&gt;&lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                xs&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&amp;lt;576px&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                sm&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&ge;576px&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                md&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&ge;768px&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                lg&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&ge;992px&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                xl&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&ge;1200px&lt;/span&gt;
+                &lt;/th&gt;
+                &lt;th scope=&quot;col&quot; class=&quot;text-center&quot;&gt;
+                xxl&lt;br&gt;
+                &lt;span class=&quot;fw-normal&quot;&gt;&ge;1400px&lt;/span&gt;
+                &lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Grid behavior&lt;/th&gt;
+                &lt;td&gt;Horizontal at all times&lt;/td&gt;
+                &lt;td colspan=&quot;5&quot;&gt;Collapsed to start, horizontal above breakpoints&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Max container width&lt;/th&gt;
+                &lt;td&gt;None (auto)&lt;/td&gt;
+                &lt;td&gt;540px&lt;/td&gt;
+                &lt;td&gt;720px&lt;/td&gt;
+                &lt;td&gt;960px&lt;/td&gt;
+                &lt;td&gt;1140px&lt;/td&gt;
+                &lt;td&gt;1320px&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Class prefix&lt;/th&gt;
+                &lt;td&gt;&lt;code&gt;.col-&lt;/code&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;code&gt;.col-sm-&lt;/code&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;code&gt;.col-md-&lt;/code&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;code&gt;.col-lg-&lt;/code&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;code&gt;.col-xl-&lt;/code&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;code&gt;.col-xxl-&lt;/code&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;# of columns&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;12&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Gutter width&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;24px (12px on each side of a column)&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Custom gutters&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Nestable&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Offsets&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th class=&quot;text-nowrap&quot; scope=&quot;row&quot;&gt;Column ordering&lt;/th&gt;
+                &lt;td colspan=&quot;6&quot;&gt;Yes&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;&lt;!-- end table --&gt;
+&lt;/div&gt;&lt;!-- end table responsive --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Row Columns</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#rowColumns">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="row row-cols-2 bg-light me-2">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="row row-cols-3 bg-light me-2">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="row row-cols-4 bg-light">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col-6 border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="row row-cols-auto bg-light mt-3 me-2">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="row row-cols-4 bg-light mt-3 me-2">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div
+                                                    class="row row-cols-1 row-cols-sm-2 row-cols-md-4 bg-light mt-3">
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                    <div class="col border py-3">Column</div>
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="rowColumns">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardRow"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardRow">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-2 bg-light me-2&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-3 bg-light me-2&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-4 bg-light&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col-6 border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-auto bg-light mt-3 me-2&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-4 bg-light mt-3 me-2&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;row row-cols-1 row-cols-sm-2 row-cols-md-4 bg-light mt-3&quot;&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+            &lt;div class=&quot;col border py-3&quot;&gt;Column&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Auto Layout Columns</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#layoutsColumns">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Equal Width</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row bg-light">
+                                                            <div class="col py-3 border">
+                                                                1 of 2
+                                                            </div>
+                                                            <div class="col py-3 border">
+                                                                2 of 2
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                        <div class="row bg-light mt-3">
+                                                            <div class="col py-3 border">
+                                                                1 of 3
+                                                            </div>
+                                                            <div class="col py-3 border">
+                                                                2 of 3
+                                                            </div>
+                                                            <div class="col py-3 border">
+                                                                3 of 3
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end card body-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Setting One Column Width</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row bg-light">
+                                                            <div class="col py-3 border">
+                                                                1 of 3
+                                                            </div>
+                                                            <div class="col-6 py-3 border">
+                                                                2 of 3 (wider)
+                                                            </div>
+                                                            <div class="col py-3 border">
+                                                                3 of 3
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                        <div class="row mt-3 bg-light">
+                                                            <div class="col py-3 border">
+                                                                1 of 3
+                                                            </div>
+                                                            <div class="col-5 py-3 border">
+                                                                2 of 3 (wider)
+                                                            </div>
+                                                            <div class="col py-3 border">
+                                                                3 of 3
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end card body-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Variable Width Content</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row justify-content-md-center bg-light">
+                                                            <div class="col col-lg-2 py-3 border">
+                                                                1 - 3
+                                                            </div>
+                                                            <div class="col-md-auto py-3 border">
+                                                                Variable width content
+                                                            </div>
+                                                            <div class="col col-lg-2 py-3 border">
+                                                                3 -3
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                        <div class="row bg-light mt-3">
+                                                            <div class="col py-3 border">
+                                                                1 - 3
+                                                            </div>
+                                                            <div class="col-md-auto py-3 border">
+                                                                Variable width content
+                                                            </div>
+                                                            <div class="col col-lg-2 py-3 border">
+                                                                3 - 3
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end card body-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="layoutsColumns">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardlayoutsColumns"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardlayoutsColumns">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Equal Width&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row bg-light&quot;&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                        1 of 2
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                        2 of 2
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+                &lt;div class=&quot;row bg-light mt-3&quot;&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                        1 of 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                        2 of 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                        3 of 3
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end card body--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Setting One Column Width&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row bg-light&quot;&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                    1 of 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-6 py-3 border&quot;&gt;
+                    2 of 3 (wider)
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                    3 of 3
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+                &lt;div class=&quot;row mt-3 bg-light&quot;&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                    1 of 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-5 py-3 border&quot;&gt;
+                    2 of 3 (wider)
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                    3 of 3
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end card body--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Variable Width Content&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row justify-content-md-center bg-light&quot;&gt;
+                    &lt;div class=&quot;col col-lg-2 py-3 border&quot;&gt;
+                    1 - 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-auto py-3 border&quot;&gt;
+                    Variable width content
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col col-lg-2 py-3 border&quot;&gt;
+                        3 -3
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+                &lt;div class=&quot;row bg-light mt-3&quot;&gt;
+                    &lt;div class=&quot;col py-3 border&quot;&gt;
+                    1 - 3
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-auto py-3 border&quot;&gt;
+                    Variable width content
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col col-lg-2 py-3 border&quot;&gt;
+                        3 - 3
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end card body--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Responsive Classes</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#responsiveBreakpoints">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">All Breakpoints</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row bg-light">
+                                                            <div class="col border py-3">col</div>
+                                                            <div class="col border py-3">col</div>
+                                                            <div class="col border py-3">col</div>
+                                                            <div class="col border py-3">col</div>
+                                                        </div><!-- end row -->
+                                                        <div class="row bg-light mt-3">
+                                                            <div class="col-8 border py-3">col-8</div>
+                                                            <div class="col-4 border py-3">col-4</div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Stacked to Horizontal</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row bg-light">
+                                                            <div class="col-sm-8 border py-3">col-sm-8</div>
+                                                            <div class="col-sm-4 border py-3">col-sm-4</div>
+                                                        </div><!-- end row -->
+                                                        <div class="row bg-light mt-3">
+                                                            <div class="col-sm border py-3">col-sm</div>
+                                                            <div class="col-sm border py-3">col-sm</div>
+                                                            <div class="col-sm border py-3">col-sm</div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end cardbody-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Mix and Match</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="row bg-light">
+                                                            <div class="col-md-8 py-3 border">.col-md-8</div>
+                                                            <div class="col-6 col-md-4 py-3 border">.col-md-4
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mt-3 bg-light">
+                                                            <div class="col-6 col-md-4 py-3 border">.col-md-4
+                                                            </div>
+                                                            <div class="col-6 col-md-4 py-3 border">.col-md-4
+                                                            </div>
+                                                            <div class="col-6 col-md-4 py-3 border">.col-md-4
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mt-3 bg-light">
+                                                            <div class="col-6 py-3 border">.col-6</div>
+                                                            <div class="col-6 py-3 border">.col-6</div>
+                                                        </div>
+                                                    </div><!-- end cardbody-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="responsiveBreakpoints">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardMix"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardMix">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;All Breakpoints&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row bg-light&quot;&gt;
+                    &lt;div class=&quot;col border py-3&quot;&gt;col&lt;/div&gt;
+                    &lt;div class=&quot;col border py-3&quot;&gt;col&lt;/div&gt;
+                    &lt;div class=&quot;col border py-3&quot;&gt;col&lt;/div&gt;
+                    &lt;div class=&quot;col border py-3&quot;&gt;col&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+                &lt;div class=&quot;row bg-light mt-3&quot;&gt;
+                    &lt;div class=&quot;col-8 border py-3&quot;&gt;col-8&lt;/div&gt;
+                    &lt;div class=&quot;col-4 border py-3&quot;&gt;col-4&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Stacked to Horizontal&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row bg-light&quot;&gt;
+                    &lt;div class=&quot;col-sm-8 border py-3&quot;&gt;col-sm-8&lt;/div&gt;
+                    &lt;div class=&quot;col-sm-4 border py-3&quot;&gt;col-sm-4&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+                &lt;div class=&quot;row bg-light mt-3&quot;&gt;
+                    &lt;div class=&quot;col-sm border py-3&quot;&gt;col-sm&lt;/div&gt;
+                    &lt;div class=&quot;col-sm border py-3&quot;&gt;col-sm&lt;/div&gt;
+                    &lt;div class=&quot;col-sm border py-3&quot;&gt;col-sm&lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end cardbody--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Mix and Match&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row bg-light&quot;&gt;
+                    &lt;div class=&quot;col-md-8 py-3 border&quot;&gt;.col-md-8&lt;/div&gt;
+                    &lt;div class=&quot;col-6 col-md-4 py-3 border&quot;&gt;.col-md-4&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row mt-3 bg-light&quot;&gt;
+                    &lt;div class=&quot;col-6 col-md-4 py-3 border&quot;&gt;.col-md-4&lt;/div&gt;
+                    &lt;div class=&quot;col-6 col-md-4 py-3 border&quot;&gt;.col-md-4&lt;/div&gt;
+                    &lt;div class=&quot;col-6 col-md-4 py-3 border&quot;&gt;.col-md-4&lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row mt-3 bg-light&quot;&gt;
+                    &lt;div class=&quot;col-6 py-3 border&quot;&gt;.col-6&lt;/div&gt;
+                    &lt;div class=&quot;col-6 py-3 border&quot;&gt;.col-6&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- end cardbody--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

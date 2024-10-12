@@ -1,0 +1,1818 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Basic Tables"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "Tables", "title": "Basic Tables"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Basic, Dark and Colored Tables</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#tablesBasic">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Basic Example</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Dark Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                         
+                                                        <div class="table-responsive">
+                                                            <table class="table table-dark mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end cardbody -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Colored Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-primary table-striped mb-0">
+                        
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead><!-- end thead -->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive-->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="tablesBasic">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardTablesBasic"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardTablesBasic">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Basic Example&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Dark Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                         
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-dark mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end cardbody --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Colored Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-primary table-striped mb-0&quot;&gt;
+
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;&lt;!-- end thead --&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive--&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Table Head, Striped Rows and Colored Bordered</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#tablesStripedrow">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Table Head</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <thead class="table-light">
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody-->
+                                                            </table><!-- end table-->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Striped Rows</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-striped mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end table -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Colored Bordered Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered border-primary mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead><!-- end thead -->
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="tablesStripedrow">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardTablesStripedrow"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardTablesStripedrow"> &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Table Head&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead class=&quot;table-light&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody--&gt;
+                    &lt;/table&gt;&lt;!-- end table--&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Striped Rows&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-striped mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end table --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Colored Bordered Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-bordered border-primary mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;&lt;!-- end thead --&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                     </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Bordered Table, Dark Table with Striped Rows, and Hoverable Rows</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#tablesDark">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Bordered Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Dark Table with Striped Rows</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                         
+                                                        <div class="table-responsive">
+                                                            <table class="table table-dark table-striped mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end cardbody -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Hoverable Rows</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive-->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="tablesDark">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardFontweight"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardFontweight"> &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Bordered Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-bordered mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Dark Table with Striped Rows&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                         
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-dark table-striped mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end cardbody --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Hoverable Rows&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-hover mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive--&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;                            &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Table Head&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead class=&quot;table-light&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody--&gt;
+                    &lt;/table&gt;&lt;!-- end table--&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Striped Rows&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-striped mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end table --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Colored Bordered Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-bordered border-primary mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;&lt;!-- end thead --&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Borderless, Small and Active Tables</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#tableBorderless">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Borderless Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table table-borderless mb-0">
+                        
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Small Table</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-sm m-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">4</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">5</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive-->
+                                                    </div><!-- end card body-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Active Tables</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="table-active">
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td class="table-active">@twitter</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="tableBorderless">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardTableBorderless"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardTableBorderless">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Borderless Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-borderless mb-0&quot;&gt;
+
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Small Table&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table table-sm m-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive--&gt;
+            &lt;/div&gt;&lt;!-- end card body--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Active Tables&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr class=&quot;table-active&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td class=&quot;table-active&quot;&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Contextual Classes, Table Foot and Captions</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#tableFoot">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row gy-4">
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Contextual Classes</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>Class</th>
+                                                                        <th>Heading</th>
+                                                                        <th>Heading</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr class="table-light">
+                                                                        <th scope="row">1</th>
+                                                                        <td>Table light</td>
+                                                                        <td>Cell</td>
+                                                                        <td>Cell</td>
+                                                                    </tr>
+                        
+                                                                    <tr class="table-success">
+                                                                        <th scope="row">2</th>
+                                                                        <td>Table Success</td>
+                                                                        <td>Cell</td>
+                                                                        <td>Cell</td>
+                                                                    </tr>
+                        
+                                                                    <tr class="table-info">
+                                                                        <th scope="row">3</th>
+                                                                        <td>Table Info</td>
+                                                                        <td>Cell</td>
+                                                                        <td>Cell</td>
+                                                                    </tr>
+                        
+                                                                    <tr class="table-warning">
+                                                                        <th scope="row">4</th>
+                                                                        <td>Table Warning</td>
+                                                                        <td>Cell</td>
+                                                                        <td>Cell</td>
+                                                                    </tr>
+                        
+                                                                    <tr class="table-danger">
+                                                                        <th scope="row">5</th>
+                                                                        <td>Table Danger</td>
+                                                                        <td>Cell</td>
+                                                                        <td>Cell</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Table Foot</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">                                        
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                        
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <td>Footer</td>
+                                                                        <td>Footer</td>
+                                                                        <td>Footer</td>
+                                                                        <td>Footer</td>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            
+                                            <div class="col-xxl-4 col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Captions</h4>
+                                                    </div><!-- end card header -->
+                                                    <div class="card-body">
+                                                        <div class="table-responsive">
+                                                            <table class="table mb-0">
+                                                                <caption>List of users</caption>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>#</th>
+                                                                        <th>First Name</th>
+                                                                        <th>Last Name</th>
+                                                                        <th>Username</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>Mark</td>
+                                                                        <td>Otto</td>
+                                                                        <td>@mdo</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>Jacob</td>
+                                                                        <td>Thornton</td>
+                                                                        <td>@fat</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>Larry</td>
+                                                                        <td>the Bird</td>
+                                                                        <td>@twitter</td>
+                                                                    </tr>
+                                                                </tbody><!-- end tbody -->
+                                                            </table><!-- end table -->
+                                                        </div><!-- end table responsive -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="tableFoot">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardtableFoot"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardtableFoot">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Contextual Classes&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;Class&lt;/th&gt;
+                                &lt;th&gt;Heading&lt;/th&gt;
+                                &lt;th&gt;Heading&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr class=&quot;table-light&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Table light&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr class=&quot;table-success&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Table Success&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr class=&quot;table-info&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Table Info&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr class=&quot;table-warning&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+                                &lt;td&gt;Table Warning&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                            &lt;/tr&gt;
+
+                            &lt;tr class=&quot;table-danger&quot;&gt;
+                                &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+                                &lt;td&gt;Table Danger&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                                &lt;td&gt;Cell&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Table Foot&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                                        
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                        &lt;tfoot&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Footer&lt;/td&gt;
+                                &lt;td&gt;Footer&lt;/td&gt;
+                                &lt;td&gt;Footer&lt;/td&gt;
+                                &lt;td&gt;Footer&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tfoot&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    
+    &lt;div class=&quot;col-xxl-4 col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Captions&lt;/h4&gt;
+            &lt;/div&gt;&lt;!-- end card header --&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;table-responsive&quot;&gt;
+                    &lt;table class=&quot;table mb-0&quot;&gt;
+                        &lt;caption&gt;List of users&lt;/caption&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;#&lt;/th&gt;
+                                &lt;th&gt;First Name&lt;/th&gt;
+                                &lt;th&gt;Last Name&lt;/th&gt;
+                                &lt;th&gt;Username&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                                &lt;td&gt;Mark&lt;/td&gt;
+                                &lt;td&gt;Otto&lt;/td&gt;
+                                &lt;td&gt;@mdo&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                                &lt;td&gt;Jacob&lt;/td&gt;
+                                &lt;td&gt;Thornton&lt;/td&gt;
+                                &lt;td&gt;@fat&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                                &lt;td&gt;Larry&lt;/td&gt;
+                                &lt;td&gt;the Bird&lt;/td&gt;
+                                &lt;td&gt;@twitter&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;&lt;!-- end tbody --&gt;
+                    &lt;/table&gt;&lt;!-- end table --&gt;
+                &lt;/div&gt;&lt;!-- end table responsive --&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Responsive Tables</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#tablesResponsive">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                        <th>Table heading</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                        <td>Table cell</td>
+                                                    </tr>
+                                                </tbody><!-- end tbody --> 
+                                            </table><!-- end table --> 
+                                        </div><!-- end responsive --> 
+                                        
+                                        <div class="collapse" id="tablesResponsive">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardTablesResponsive"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardTablesResponsive">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table mb-0&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+                &lt;th&gt;Table heading&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+                &lt;td&gt;Table cell&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;&lt;!-- end tbody --&gt; 
+    &lt;/table&gt;&lt;!-- end table --&gt; 
+&lt;/div&gt;&lt;!-- end responsive --&gt; </code>
+</pre>
+                                            </div>
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

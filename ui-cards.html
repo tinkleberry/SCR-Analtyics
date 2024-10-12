@@ -1,0 +1,1556 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Cards"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Cards"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Button Group</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#simpleCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card mb-lg-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-1.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-2">Card title</h4>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make
+                                                            up the bulk of the card's content.</p>
+                                                        <a href="#" class="btn btn-primary">Button</a>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card mb-xl-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-2.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-2">Card title</h4>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make
+                                                            up the bulk of the card's content.</p>
+                                                    </div>
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">Cras justo odio</li>
+                                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                    </ul>
+                                                    <div class="card-body">
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card mb-lg-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-3.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make
+                                                            up the bulk of the card's content.</p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-xl-3 col-md-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-2">Card title</h4>
+                                                        <h6 class="card-subtitle font-14 text-muted">Support
+                                                            card subtitle</h6>
+                                                    </div>
+                                                    <img class="img-fluid" src="assets/images/small/img-4.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make
+                                                            up the bulk of the card's content.</p>
+                                                        <a href="#" class="card-link">Card link</a>
+                                                        <a href="#" class="card-link">Another link</a>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="simpleCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardButtonsgroup"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardButtonsgroup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-3 col-md-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-1.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-2&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-xl-3 col-md-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+                &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-2.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-2&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+                &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-xl-3 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-3.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-xl-3 col-md-6&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-2&quot;&gt;Card title&lt;/h4&gt;
+                &lt;h6 class=&quot;card-subtitle font-14 text-muted&quot;&gt;Support card subtitle&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;img class=&quot;img-fluid&quot; src=&quot;assets/images/small/img-4.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Card link&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;card-link&quot;&gt;Another link&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+
+                                            </div>
+                                        </div>
+                                    </div><!-- end card body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Using Grid Markup</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#gridMarkup">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header-->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card card-body mb-0">
+                                                    <h3 class="card-title mb-1">Special title treatment</h3>
+                                                    <p class="card-text">With supporting text below as a natural
+                                                        lead-in to additional
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-6">
+                                                <div class="card card-body mb-0">
+                                                    <h3 class="card-title mb-1">Special title treatment</h3>
+                                                    <p class="card-text">With supporting text below as a natural
+                                                        lead-in to additional
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="gridMarkup">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardGridMarkup"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardGridMarkup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;card card-body mb-0&quot;&gt;
+            &lt;h3 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h3&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional
+                content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;card card-body mb-0&quot;&gt;
+            &lt;h3 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h3&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional
+                content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Text Alignment</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#alignmentCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card card-body mb-lg-0">
+                                                    <h4 class="card-title mb-1">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural
+                                                        lead-in to additional
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card card-body text-center mb-lg-0">
+                                                    <h4 class="card-title mb-1">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural
+                                                        lead-in to additional
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card card-body text-end mb-0">
+                                                    <h4 class="card-title mb-1">Special title treatment</h4>
+                                                    <p class="card-text">With supporting text below as a natural
+                                                        lead-in to additional
+                                                        content.</p>
+                                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="alignmentCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCard"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCard">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card card-body mb-lg-0&quot;&gt;
+            &lt;h4 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h4&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional
+                content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card card-body text-center mb-lg-0&quot;&gt;
+            &lt;h4 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h4&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional
+                content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card card-body text-end mb-0&quot;&gt;
+            &lt;h4 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h4&gt;
+            &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional
+                content.&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Header and Footer</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#headerCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card mb-lg-0">
+                                                    <h4 class="card-header mt-0">Featured</h4>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Special title treatment</h4>
+                                                        <p class="card-text">With supporting text below as a
+                                                            natural lead-in to
+                                                            additional content.</p>
+                                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card mb-lg-0">
+                                                    <div class="card-header">Featured</div>
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Special title treatment</h4>
+                                                        <p class="card-text">With supporting text below as a
+                                                            natural lead-in to
+                                                            additional content.</p>
+                                                    </div>
+                                                    <div class="card-footer text-muted">2 days ago</div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        Quote
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <blockquote class="card-blockquote mb-0">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Integer posuere
+                                                                erat a ante.</p>
+                                                            <footer class="blockquote-footer font-size-12 mt-0">
+                                                                Someone famous in <cite
+                                                                    title="Source Title">Source Title</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="headerCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCardheader"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCardheader">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;h4 class=&quot;card-header mt-0&quot;&gt;Featured&lt;/h4&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to
+                    additional content.&lt;/p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;Featured&lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Special title treatment&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to
+                    additional content.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer text-muted&quot;&gt;2 days ago&lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                Quote
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;blockquote class=&quot;card-blockquote mb-0&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                        erat a ante.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-12 mt-0&quot;&gt;
+                        Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+                    &lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Image Caps & Overlays</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#overlayCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card mb-lg-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-5.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Card title</h4>
+                                                        <p class="card-text">This is a wider card with
+                                                            supporting text below as a
+                                                            natural lead-in to additional content. This content
+                                                            is a little bit
+                                                            longer.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card mb-lg-0">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Card title</h4>
+                                                        <p class="card-text">This is a wider card with
+                                                            supporting text below as a
+                                                            natural lead-in to additional content. This content
+                                                            is a little bit
+                                                            longer.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                    <img class="card-img-bottom img-fluid"
+                                                        src="assets/images/small/img-6.png"
+                                                        alt="Card image cap">
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card mb-0">
+                                                    <img class="card-img img-fluid"
+                                                        src="assets/images/small/img-7.png" alt="Card image">
+                                                    <div class="card-img-overlay">
+                                                        <h4 class="card-title text-white mb-1">Card title</h4>
+                                                        <p class="card-text text-light">This is a wider card
+                                                            with supporting text below as a
+                                                            natural lead-in to additional content. This content
+                                                            is a little bit
+                                                            longer.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-white">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="overlayCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardcardImages"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardcardImages">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-4.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a
+                    natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a
+                    natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;img class=&quot;card-img-bottom img-fluid&quot; src=&quot;assets/images/small/img-5.png&quot; alt=&quot;Card image cap&quot;&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;img class=&quot;card-img img-fluid&quot; src=&quot;assets/images/small/img-6.png&quot; alt=&quot;Card image&quot;&gt;
+            &lt;div class=&quot;card-img-overlay&quot;&gt;
+                &lt;h4 class=&quot;card-title text-white mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text text-light&quot;&gt;This is a wider card with supporting text below as a
+                    natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-white&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Horizontal Card</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#horizontalCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header-->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="card mb-xl-0">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-4">
+                                                            <img src="assets/images/small/img-8.png"
+                                                                class="card-img img-fluid h-100 horizontal-card"
+                                                                alt="Card image">
+                                                        </div>
+                                                        <div class="col-md-8 align-self-center">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-1">Card title</h5>
+                                                                <p class="card-text">This is a wider card with
+                                                                    supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-muted">Last updated 3 mins
+                                                                        ago</small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div>
+                                            <!-- end col -->
+                                            <div class="col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8 align-self-center">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title mb-1">Card title</h5>
+                                                                <p class="card-text">This is a wider card with
+                                                                    supporting text below as a
+                                                                    natural lead-in to additional content.</p>
+                                                                <p class="card-text"><small
+                                                                        class="text-muted">Last updated 3 mins
+                                                                        ago</small>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <img src="assets/images/small/img-9.png"
+                                                                class="card-img img-fluid h-100 horizontal-card"
+                                                                alt="Card image">
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div>
+                                        <div class="collapse" id="horizontalCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardhorizontal"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardhorizontal">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;row no-gutters align-items-center&quot;&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;img class=&quot;card-img img-fluid&quot; src=&quot;assets/images/small/img-8.png&quot; alt=&quot;Card image&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h5&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to 
+                        additional content.&lt;/p&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;row no-gutters align-items-center&quot;&gt;
+                &lt;div class=&quot;col-md-8&quot;&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h5&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to 
+                        additional content.&lt;/p&gt;
+                        &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-md-4&quot;&gt;
+                    &lt;img class=&quot;card-img img-fluid&quot; src=&quot;assets/images/small/img-.png&quot; alt=&quot;Card image&quot;&gt;
+                &lt;/div&gt; 
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Background Color</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#colorCard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card bg-primary text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Primary Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-success text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Success Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-info text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Info Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card bg-warning text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Warning Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-danger text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Danger Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-dark text-white-50">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Dark Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card bg-secondary text-white-50 mb-lg-0">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Secondary Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-purple text-white-50 mb-lg-0">
+                                                    <div class="card-body">
+                                                        <h6 class="text-white mb-3">Purple Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card bg-light mb-0">
+                                                    <div class="card-body">
+                                                        <h6 class="mb-3">Light Card</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="colorCard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCradcolors"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCradcolors">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-primary text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-primary text-white&quot;&gt;Primary Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-success text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-success text-white&quot;&gt;Success Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-info text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-info text-white&quot;&gt;Info Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-warning text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-warning text-white&quot;&gt;Warning Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-danger text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-danger text-white&quot;&gt;Danger Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-dark text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-dark text-white&quot;&gt;Dark Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-secondary text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-secondary text-white&quot;&gt;Secondary Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-purple text-white-50&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-purple text-white&quot;&gt;Purple Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-light&quot;&gt;
+            &lt;h6 class=&quot;card-header bg-light&quot;&gt;Light Card&lt;/h6&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Border Color</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#cardBorderColor">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card border border-primary">
+                                                    <div class="card-header bg-transparent border-primary">
+                                                        <h6 class="my-0 text-primary">Primary Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-success">
+                                                    <div class="card-header bg-transparent border-success">
+                                                        <h6 class="my-0 text-success">Success Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-info">
+                                                    <div class="card-header bg-transparent border-info">
+                                                        <h6 class="my-0 text-info">Info Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card border border-warning">
+                                                    <div class="card-header bg-transparent border-warning">
+                                                        <h6 class="my-0 text-warning">Warning Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-danger">
+                                                    <div class="card-header bg-transparent border-danger">
+                                                        <h6 class="my-0 text-danger">Danger Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-dark">
+                                                    <div class="card-header bg-transparent border-dark">
+                                                        <h6 class="my-0 text-dark">Dark Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">card title</h5>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="card border border-secondary mb-lg-0">
+                                                    <div class="card-header bg-transparent border-secondary">
+                                                        <h6 class="my-0 text-secondary">Secondary Outline Card
+                                                        </h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h6 class="card-title mb-1">card title</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-purple mb-lg-0">
+                                                    <div class="card-header bg-transparent border-purple">
+                                                        <h6 class="my-0 text-purple">Purple Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h6 class="card-title mb-1">card title</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-lg-4">
+                                                <div class="card border border-light mb-0">
+                                                    <div class="card-header bg-transparent border-light">
+                                                        <h6 class="my-0">Light Outline Card</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h6 class="card-title mb-1">card title</h6>
+                                                        <p class="card-text">Some quick example text to build on
+                                                            the card title and make up the bulk of the card's
+                                                            content.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="cardBorderColor">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCardborder"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCardborder">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-primary&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-primary&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-primary&quot;&gt;Primary Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-success&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-success&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-success&quot;&gt;Success Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-info&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-info&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-info&quot;&gt;Info Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-warning&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-warning&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-warning&quot;&gt;Warning Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-danger&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-danger&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-danger&quot;&gt;Danger Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-dark&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-dark&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-dark&quot;&gt;Dark Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h5 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h5&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;/div&gt;&lt;!-- end row --&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-secondary mb-lg-0&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-secondary&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-secondary&quot;&gt;Secondary Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h6 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h6&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-purple mb-lg-0&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-purple&quot;&gt;
+                &lt;h6 class=&quot;my-0 text-purple&quot;&gt;Purple Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h6 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h6&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;card border border-light mb-0&quot;&gt;
+            &lt;div class=&quot;card-header bg-transparent border-light&quot;&gt;
+                &lt;h6 class=&quot;my-0&quot;&gt;Light Outline Card&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h6 class=&quot;card-title mb-1&quot;&gt;card title&lt;/h6&gt;
+                &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of 
+                the card's content.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Card Groups</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#cardGroup">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="card-deck-wrapper">
+                                            <div class="card-group">
+                                                <div class="card mb-lg-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-2.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Card title</h4>
+                                                        <p class="card-text">This is a longer card with
+                                                            supporting text below as
+                                                            a natural lead-in to additional content. This
+                                                            content is a little
+                                                            bit longer.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                                <div class="card mb-lg-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-1.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Card title</h4>
+                                                        <p class="card-text">This card has supporting text below
+                                                            as a natural
+                                                            lead-in to additional content.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                                <div class="card mb-0">
+                                                    <img class="card-img-top img-fluid"
+                                                        src="assets/images/small/img-3.png"
+                                                        alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-1">Card title</h4>
+                                                        <p class="card-text">This is a wider card with
+                                                            supporting text below as
+                                                            a natural lead-in to additional content. This card
+                                                            has even longer
+                                                            content than the first to show that equal height
+                                                            action.</p>
+                                                        <p class="card-text">
+                                                            <small class="text-muted">Last updated 3 mins
+                                                                ago</small>
+                                                        </p>
+                                                    </div>
+                                                </div><!-- end card -->
+                                            </div><!-- end card group-->
+                                        </div>
+                                        <div class="collapse" id="cardGroup">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCardgroup"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCardgroup">&lt;div class=&quot;card-deck-wrapper&quot;&gt;
+    &lt;div class=&quot;card-group&quot;&gt;
+        &lt;div class=&quot;card mb-lg-0&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-2.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as
+                    a natural lead-in to additional content. This content is a little
+                    bit longer.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;div class=&quot;card mb-lg-0&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-1.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural
+                    lead-in to additional content.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;assets/images/small/img-3.png&quot; alt=&quot;Card image cap&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;h4 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h4&gt;
+                &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as
+                    a natural lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.&lt;/p&gt;
+                &lt;p class=&quot;card-text&quot;&gt;
+                    &lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end card group--&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Masonary</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#Masonarycard">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header-->
+                                    <div class="card-body">
+                                        <div class="row" data-masonry='{"percentPosition": true }'>
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card">
+                                                    <img src="assets/images/small/img-4.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">Card title that wraps to a
+                                                            new line</h5>
+                                                        <p class="card-text">This is a longer card with
+                                                            supporting text below as a natural lead-in to
+                                                            additional content. This content is a little bit
+                                                            longer.</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card">
+                                                    <img src="assets/images/small/img-5.png"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">Card title</h5>
+                                                        <p class="card-text">This card has supporting text below
+                                                            as a natural lead-in to additional content.</p>
+                                                        <p class="card-text"><small class="text-muted">Last
+                                                                updated 3 mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card">
+                                                    <img src="assets/images/small/img-7.png"
+                                                        class="card-img-top" alt="...">
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card p-3 text-end">
+                                                    <blockquote class="card-blockquote  mb-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                            elit. Integer posuere erat a ante.</p>
+                                                        <footer class="blockquote-footer font-size-12 m-0">
+                                                            Someone famous in <cite title="Source Title">Source
+                                                                Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <blockquote class="card-blockquote mb-0">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Integer posuere erat a ante.
+                                                            </p>
+                                                            <footer class="blockquote-footer font-size-12 m-0">
+                                                                Someone famous in <cite
+                                                                    title="Source Title">Source Title</cite>
+                                                            </footer>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card bg-primary text-white text-center p-3">
+                                                    <blockquote class="card-blockquote m-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                            elit. Integer posuere erat.</p>
+                                                        <footer
+                                                            class="blockquote-footer text-white font-size-12 mt-0 mb-0">
+                                                            Someone famous in <cite title="Source Title">Source
+                                                                Title</cite>
+                                                        </footer>
+                                                    </blockquote>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card mb-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">Card title</h5>
+                                                        <p class="card-text">This is another card with title and
+                                                            supporting text below. This card has some additional
+                                                            content to make it slightly taller overall.</p>
+                                                        <p class="card-text"><small class="text-muted">Last
+                                                                updated 3 mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="card text-center mb-0">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title mb-1">Card title</h5>
+                                                        <p class="card-text">This card has a regular title and
+                                                            short paragraphy of text below it.</p>
+                                                        <p class="card-text"><small class="text-muted">Last
+                                                                updated 3 mins ago</small></p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                        <div class="collapse" id="Masonarycard">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardCardmasonary"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardCardmasonary">&lt;div class=&quot;row&quot; data-masonry='{&quot;percentPosition&quot;: true }'&gt;
+    &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img src=&quot;assets/images/small/img-4.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title that wraps to a new line&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. 
+            This content is a little bit longer.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img src=&quot;assets/images/small/img-5.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;img src=&quot;assets/images/small/img-7.png&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card p-3 text-end&quot;&gt;
+            &lt;blockquote class=&quot;card-blockquote  mb-0&quot;&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+            &lt;footer class=&quot;blockquote-footer font-size-12 m-0&quot;&gt;
+                Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt; 
+            &lt;/footer&gt;
+            &lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;blockquote class=&quot;card-blockquote mb-0&quot;&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+                    &lt;footer class=&quot;blockquote-footer font-size-12 m-0&quot;&gt;
+                        Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+                    &lt;/footer&gt;
+                &lt;/blockquote&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card bg-primary text-white text-center p-3&quot;&gt;
+            &lt;blockquote class=&quot;card-blockquote m-0&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.&lt;/p&gt;
+                &lt;footer class=&quot;blockquote-footer text-white font-size-12 mt-0 mb-0&quot;&gt;
+                    Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+                &lt;/footer&gt;
+            &lt;/blockquote&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This is another card with title and supporting text below. This card has some additional 
+            content to make it slightly taller overall.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-sm-6 col-lg-4&quot;&gt;
+        &lt;div class=&quot;card text-center&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title mb-1&quot;&gt;Card title&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;This card has a regular title and short paragraphy of text below it.&lt;/p&gt;
+            &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 mins ago&lt;/small&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt; 
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Masonary layout-->
+        <script src="assets/libs/masonry-layout/masonry.pkgd.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

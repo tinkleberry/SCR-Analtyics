@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Pagination"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Pagination"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Paginations</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#PaginationsButtons">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Default Paginations</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination">
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">Previous</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">Next</a></li>
+                                                            </ul><!-- end ul -->
+                                                        </nav>
+                                                        <!-- end nav -->
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination mb-0">
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"
+                                                                        aria-label="Previous">
+                                                                        <i class="mdi mdi-chevron-left"></i>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"
+                                                                        aria-label="Next">
+                                                                        <i class="mdi mdi-chevron-right"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul><!-- end ul -->
+                                                        </nav><!-- end nav -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Disabled and Active States</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item active">
+                                                                    <a class="page-link" href="#">2 <span
+                                                                            class="sr-only">(current)</span></a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul><!-- end ul -->
+                                                        </nav><!-- end nav -->
+
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination mb-0">
+                                                                <li class="page-item disabled">
+                                                                    <span class="page-link"><i
+                                                                            class="mdi mdi-chevron-left"></i></span>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item active">
+                                                                    <span class="page-link">
+                                                                        2
+                                                                        <span class="sr-only">(current)</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i
+                                                                            class="mdi mdi-chevron-right"></i></a>
+                                                                </li>
+                                                            </ul><!-- end ul -->
+                                                        </nav><!-- end nav -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-4">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Pagination Alignment</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination justify-content-center">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul><!-- end ul -->
+                                                        </nav><!-- end nav -->
+
+                                                        <nav aria-label="Page navigation example">
+                                                            <ul class="pagination justify-content-end mb-0">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav><!-- end nav -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="PaginationsButtons">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardPagination"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardPagination">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-lg-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Default Paginations&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+                    &lt;ul class=&quot;pagination&quot;&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+                    &lt;ul class=&quot;pagination mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+                                &lt;i class=&quot;mdi mdi-chevron-left&quot;&gt;&lt;/i&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+                                &lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-lg-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Disabled and Active States&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;nav aria-label=&quot;...&quot;&gt;
+                    &lt;ul class=&quot;pagination&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item active&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;nav aria-label=&quot;...&quot;&gt;
+                    &lt;ul class=&quot;pagination mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item active&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;
+                                2
+                                &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-xl-4&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Pagination Alignment&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;                
+                &lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+                    &lt;ul class=&quot;pagination justify-content-center&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+                    &lt;ul class=&quot;pagination justify-content-end mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Pagination Sizing and Rounded</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#paginationSizing">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Pagination Sizing</h4>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination pagination-lg">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav><!-- end nav -->
+
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination pagination-sm mb-0">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#"
+                                                                        tabindex="-1">Previous</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">2</a></li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Next</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav><!-- end nav -->
+                                                    </div><!-- end cardbody -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-header">
+                                                        <h4 class="card-title">Pagination Rounded</h4>
+                                                    </div>
+                                                    <!-- end card-header -->
+                                                    <div class="card-body">
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination pagination-rounded">
+                                                                <li class="page-item disabled">
+                                                                    <span class="page-link"><i
+                                                                            class="mdi mdi-chevron-left"></i></span>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">1</a></li>
+                                                                <li class="page-item active">
+                                                                    <span class="page-link">
+                                                                        2
+                                                                        <span class="sr-only">(current)</span>
+                                                                    </span>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#"><i
+                                                                            class="mdi mdi-chevron-right"></i></a>
+                                                                </li>
+                                                            </ul><!-- end ul -->
+                                                        </nav><!-- end nav -->
+                                                    </div><!-- end card body -->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="paginationSizing">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardPaginationsize"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardPaginationsize">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-lg-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Pagination Sizing&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;nav aria-label=&quot;...&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-lg&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+
+                &lt;nav aria-label=&quot;...&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-sm mb-0&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;&lt;!-- end cardbody --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-header&quot;&gt;
+                &lt;h4 class=&quot;card-title&quot;&gt;Pagination Rounded&lt;/h4&gt;    
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;nav aria-label=&quot;...&quot;&gt;
+                    &lt;ul class=&quot;pagination pagination-rounded&quot;&gt;
+                        &lt;li class=&quot;page-item disabled&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-left&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item active&quot;&gt;
+                            &lt;span class=&quot;page-link&quot;&gt;
+                                2
+                                &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;
+                            &lt;/span&gt;
+                        &lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class=&quot;page-item&quot;&gt;
+                            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;mdi mdi-chevron-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;&lt;!-- end card body --&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

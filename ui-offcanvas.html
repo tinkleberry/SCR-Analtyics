@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Offcanvas"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Offcanvas"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Offcanvas Demo</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#demoOffcanvas">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <a class="btn btn-primary" data-bs-toggle="offcanvas"
+                                                href="#offcanvasExample" role="button"
+                                                aria-controls="offcanvasExample">
+                                                Link with href
+                                            </a>
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                                aria-controls="offcanvasExample">
+                                                Button with data-bs-target
+                                            </button>
+                                        </div>
+
+                                        <div class="offcanvas offcanvas-start" tabindex="-1"
+                                            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas
+                                                </h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div>
+                                                    Some text as placeholder. In real life you can have the
+                                                    elements you have chosen. Like, text, images, lists, etc.
+                                                </div>
+                                                <div class="dropdown mt-3">
+                                                    <button class="btn btn-primary dropdown-toggle"
+                                                        type="button" id="dropdownMenuButton"
+                                                        data-bs-toggle="dropdown">
+                                                        Dropdown button <i class="mdi mdi-chevron-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu"
+                                                        aria-labelledby="dropdownMenuButton">
+                                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Something else
+                                                                here</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="collapse" id="demoOffcanvas">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardOffcanvas"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardOffcanvas">&lt;div class=&quot;d-flex flex-wrap gap-2&quot;&gt;
+    &lt;a class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;offcanvas&quot; href=&quot;#offcanvasExample&quot; 
+    role=&quot;button&quot; aria-controls=&quot;offcanvasExample&quot;&gt;Link with href&lt;/a&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasExample&quot; 
+    aria-controls=&quot;offcanvasExample&quot;&gt;
+    Button with data-bs-target
+    &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;offcanvas offcanvas-start&quot; tabindex=&quot;-1&quot; id=&quot;offcanvasExample&quot; aria-labelledby=&quot;offcanvasExampleLabel&quot;&gt;
+    &lt;div class=&quot;offcanvas-header&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;offcanvasExampleLabel&quot;&gt;Offcanvas&lt;/h5&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-close text-reset&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;div&gt;
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    &lt;/div&gt;
+    &lt;div class=&quot;dropdown mt-3&quot;&gt;
+        &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-bs-toggle=&quot;dropdown&quot;&gt;
+            Dropdown button &lt;i class=&quot;mdi mdi-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Offcanvas Placement</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#placementOffcanvas">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                                                aria-controls="offcanvasTop">Toggle top offcanvas</button>
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                                aria-controls="offcanvasRight">Toggle right offcanvas</button>
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                                aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+                                        </div>
+
+                                        <!-- top offcanvas -->
+                                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                                            aria-labelledby="offcanvasTopLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasTopLabel">Offcanvas Top</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                ...
+                                            </div>
+                                        </div>
+
+                                        <!-- right offcanvas -->
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                            aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasRightLabel">Offcanvas Right</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                ...
+                                            </div>
+                                        </div>
+
+                                        <!-- bottom offcanvas -->
+                                        <div class="offcanvas offcanvas-bottom" tabindex="-1"
+                                            id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 id="offcanvasBottomLabel">Offcanvas Bottom</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                ...
+                                            </div>
+                                        </div>
+
+                                        <div class="collapse" id="placementOffcanvas">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardPlacements"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardPlacements">&lt;div class=&quot;d-flex flex-wrap gap-2&quot;&gt;
+    &lt;a class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;offcanvas&quot; href=&quot;#offcanvasExample&quot; 
+    role=&quot;button&quot; aria-controls=&quot;offcanvasExample&quot;&gt;Link with href&lt;/a&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasExample&quot; 
+    aria-controls=&quot;offcanvasExample&quot;&gt;
+    Button with data-bs-target
+    &lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;offcanvas offcanvas-start&quot; tabindex=&quot;-1&quot; id=&quot;offcanvasExample&quot; aria-labelledby=&quot;offcanvasExampleLabel&quot;&gt;
+    &lt;div class=&quot;offcanvas-header&quot;&gt;
+    &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;offcanvasExampleLabel&quot;&gt;Offcanvas&lt;/h5&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn-close text-reset&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas-body&quot;&gt;
+    &lt;div&gt;
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    &lt;/div&gt;
+    &lt;div class=&quot;dropdown mt-3&quot;&gt;
+        &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenuButton&quot; data-bs-toggle=&quot;dropdown&quot;&gt;
+            Dropdown button &lt;i class=&quot;mdi mdi-chevron-down&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+        &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;dropdownMenuButton&quot;&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Offcanvas Backdrop</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#backdropOffcanvas">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                                                aria-controls="offcanvasScrolling">Enable body
+                                                scrolling</button>
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasWithBackdrop"
+                                                aria-controls="offcanvasWithBackdrop">Enable backdrop
+                                                (default)</button>
+                                            <button class="btn btn-primary" type="button"
+                                                data-bs-toggle="offcanvas"
+                                                data-bs-target="#offcanvasWithBothOptions"
+                                                aria-controls="offcanvasWithBothOptions">Enable both scrolling &
+                                                backdrop</button>
+                                        </div>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true"
+                                            data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                                            aria-labelledby="offcanvasScrollingLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored
+                                                    with scrolling</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Try scrolling the rest of the page to see this option in
+                                                    action.</p>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas offcanvas-start" tabindex="-1"
+                                            id="offcanvasWithBackdrop"
+                                            aria-labelledby="offcanvasWithBackdropLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+                                                    Offcanvas with backdrop</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Try scrolling the rest of the page to see this option in
+                                                    action.</p>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true"
+                                            tabindex="-1" id="offcanvasWithBothOptions"
+                                            aria-labelledby="offcanvasWithBothOptionsLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                                                    Backdroped with scrolling</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Try scrolling the rest of the page to see this option in
+                                                    action.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="collapse" id="backdropOffcanvas">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardScrooling"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardScrooling">&lt;div class=&quot;d-flex flex-wrap gap-2&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasScrolling&quot; 
+    aria-controls=&quot;offcanvasScrolling&quot;&gt;Enable body scrolling&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasWithBackdrop&quot; 
+    aria-controls=&quot;offcanvasWithBackdrop&quot;&gt;Enable backdrop (default)&lt;/button&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#offcanvasWithBothOptions&quot; 
+    aria-controls=&quot;offcanvasWithBothOptions&quot;&gt;Enable both scrolling &amp; backdrop&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;offcanvas offcanvas-start&quot; data-bs-scroll=&quot;true&quot; data-bs-backdrop=&quot;false&quot; tabindex=&quot;-1&quot; id=&quot;offcanvasScrolling&quot; 
+    aria-labelledby=&quot;offcanvasScrollingLabel&quot;&gt;
+    &lt;div class=&quot;offcanvas-header&quot;&gt;
+        &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;offcanvasScrollingLabel&quot;&gt;Colored with scrolling&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close text-reset&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas-body&quot;&gt;
+        &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas offcanvas-start&quot; tabindex=&quot;-1&quot; id=&quot;offcanvasWithBackdrop&quot; aria-labelledby=&quot;offcanvasWithBackdropLabel&quot;&gt;
+    &lt;div class=&quot;offcanvas-header&quot;&gt;
+        &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;offcanvasWithBackdropLabel&quot;&gt;Offcanvas with backdrop&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close text-reset&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas-body&quot;&gt;
+        &lt;p&gt;.....&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas offcanvas-start&quot; data-bs-scroll=&quot;true&quot; tabindex=&quot;-1&quot; id=&quot;offcanvasWithBothOptions&quot; 
+    aria-labelledby=&quot;offcanvasWithBothOptionsLabel&quot;&gt;
+    &lt;div class=&quot;offcanvas-header&quot;&gt;
+        &lt;h5 class=&quot;offcanvas-title&quot; id=&quot;offcanvasWithBothOptionsLabel&quot;&gt;Backdroped with scrolling&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close text-reset&quot; data-bs-dismiss=&quot;offcanvas&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;offcanvas-body&quot;&gt;
+        &lt;p&gt;Try scrolling the rest of the page to see this option in action.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Images"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Images"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Image Rounded, Circle & Thumbnails</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#RoundedImage">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="card mb-xl-0">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <img class="rounded" alt="200x200" width="200"
+                                                                    src="assets/images/small/img-7.png"
+                                                                    data-holder-rendered="true">
+                                                                <p class="mt-2 mb-lg-0"><code>.rounded</code>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="mt-4 mt-md-0">
+                                                                    <img class="rounded-circle avatar-xl"
+                                                                        alt="200x200"
+                                                                        src="assets/images/users/avatar-4.jpg"
+                                                                        data-holder-rendered="true">
+                                                                    <p class="mt-2 mb-lg-0">
+                                                                        <code>.rounded-circle</code>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div><!-- end row -->
+                                                    </div><!-- end cardbody-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+
+                                            <div class="col-xl-6">
+                                                <div class="card mb-0">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <img class="img-thumbnail" alt="200x200"
+                                                                    width="200"
+                                                                    src="assets/images/small/img-5.png"
+                                                                    data-holder-rendered="true">
+                                                                <p class="mt-2 mb-lg-0">
+                                                                    <code>.img-thumbnail</code>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="mt-4 mt-md-0">
+                                                                    <img class="img-thumbnail rounded-circle avatar-xl"
+                                                                        alt="200x200"
+                                                                        src="assets/images/users/avatar-3.jpg"
+                                                                        data-holder-rendered="true">
+                                                                    <p class="mt-2 mb-lg-0">
+                                                                        <code>.img-thumbnail</code>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end cardbody-->
+                                                </div><!-- end card -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="RoundedImage">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardThumbnails"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardThumbnails">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-xl-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;img class=&quot;rounded&quot; alt=&quot;200x200&quot; width=&quot;200&quot; 
+                        src=&quot;assets/images/small/img-7.png&quot; data-holder-rendered=&quot;true&quot;&gt;
+                        &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.rounded&lt;/code&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;div class=&quot;mt-4 mt-md-0&quot;&gt;
+                            &lt;img class=&quot;rounded-circle avatar-xl&quot; alt=&quot;200x200&quot; 
+                            src=&quot;assets/images/users/avatar-4.jpg&quot; data-holder-rendered=&quot;true&quot;&gt;
+                            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.rounded-circle&lt;/code&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!-- end row --&gt;
+            &lt;/div&gt;&lt;!-- end cardbody--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+
+        &lt;div class=&quot;col-xl-6&quot;&gt;
+        &lt;div class=&quot;card mb-0&quot;&gt;
+            &lt;div class=&quot;card-body&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;img class=&quot;img-thumbnail&quot; alt=&quot;200x200&quot; width=&quot;200&quot; 
+                        src=&quot;assets/images/small/img-5.png&quot; data-holder-rendered=&quot;true&quot;&gt;
+                        &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.img-thumbnail&lt;/code&gt;&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;div class=&quot;mt-4 mt-md-0&quot;&gt;
+                            &lt;img class=&quot;img-thumbnail rounded-circle avatar-xl&quot; alt=&quot;200x200&quot; 
+                            src=&quot;assets/images/users/avatar-3.jpg&quot; data-holder-rendered=&quot;true&quot;&gt;
+                            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.img-thumbnail&lt;/code&gt;&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!-- end cardbody--&gt;
+        &lt;/div&gt;&lt;!-- end card --&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Rounded Image Sizes</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#roundedImages">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="rounded avatar-xs">
+                                                    <p class="mt-2 mb-lg-0"><code>.avatar-xs</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                        class="rounded avatar-sm">
+                                                    <p class="mt-2  mb-lg-0"><code>.avatar-sm</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-5.jpg" alt=""
+                                                        class="rounded avatar">
+                                                    <p class="mt-2 mb-lg-0"><code>.avatar</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="rounded avatar-md">
+                                                    <p class="mt-2 mb-lg-0"><code>.avatar-md</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-8.jpg" alt=""
+                                                        class="rounded avatar-lg">
+                                                    <p class="mt-2 mb-lg-0"><code>.avatar-lg</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-10.jpg" alt=""
+                                                        class="rounded avatar-xl">
+                                                    <p class="mt-2 mb-lg-0"><code>.avatar-xl</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="roundedImages">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardRoundedimg"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardRoundedimg">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar-xs&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-xs&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-4.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar-sm&quot;&gt;
+            &lt;p class=&quot;mt-2  mb-lg-0&quot;&gt;&lt;code&gt;.avatar-sm&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-5.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar-md&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-md&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-8.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar-lg&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-lg&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/small/img-2.jpg&quot; alt=&quot;&quot; class=&quot;rounded avatar-xl&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-xl&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Rounded Circle Image Sizes</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#roundedCircle">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="rounded-circle avatar-xs">
+                                                    <p class="mt-2 mb-md-0"><code>.avatar-xs</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-4.jpg" alt=""
+                                                        class="rounded-circle avatar-sm">
+                                                    <p class="mt-2  mb-md-0"><code>.avatar-sm</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-5.jpg" alt=""
+                                                        class="rounded-circle avatar">
+                                                    <p class="mt-2 mb-md-0"><code>.avatar</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-2.jpg" alt=""
+                                                        class="rounded-circle avatar-md">
+                                                    <p class="mt-2 mb-md-0"><code>.avatar-md</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-8.jpg" alt=""
+                                                        class="rounded-circle avatar-lg">
+                                                    <p class="mt-2 mb-md-0"><code>.avatar-lg</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-2">
+                                                <div>
+                                                    <img src="assets/images/users/avatar-10.jpg" alt=""
+                                                        class="rounded-circle avatar-xl">
+                                                    <p class="mt-2 mb-md-0"><code>.avatar-xl</code></p>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="roundedCircle">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardRoundedcircle"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardRoundedcircle">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar-xs&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-xs&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-4.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar-sm&quot;&gt;
+            &lt;p class=&quot;mt-2  mb-lg-0&quot;&gt;&lt;code&gt;.avatar-sm&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-5.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-2.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar-md&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-md&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-8.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar-lg&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-lg&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-2&quot;&gt;
+        &lt;div&gt;
+            &lt;img src=&quot;assets/images/users/avatar-10.jpg&quot; alt=&quot;&quot; class=&quot;rounded-circle avatar-xl&quot;&gt;
+            &lt;p class=&quot;mt-2 mb-lg-0&quot;&gt;&lt;code&gt;.avatar-xl&lt;/code&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Media Objects</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#mediaObject">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end card header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="d-flex mb-3 mb-xl-0">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="assets/images/users/avatar-10.jpg"
+                                                            class="avatar-lg img-fluid" alt="">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        This is some content from a media component. You can
+                                                        replace this with any content and adjust it as needed.
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4">
+                                                <div class="d-flex align-items-center mb-3 mb-xl-0">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="assets/images/users/avatar-10.jpg"
+                                                            class="avatar-lg img-fluid" alt="">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        This is some content from a media component. You can
+                                                        replace this with any content and adjust it as needed.
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-4">
+                                                <div class="d-flex align-items-end mb-3 mb-lg-0">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="assets/images/users/avatar-10.jpg"
+                                                            class="avatar-lg img-fluid" alt="">
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        This is some content from a media component. You can
+                                                        replace this with any content and adjust it as needed.
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="mediaObject">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardMedia"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardMedia">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;d-flex&quot;&gt;
+            &lt;div class=&quot;flex-shrink-0&quot;&gt;
+            &lt;img src=&quot;assets/images/users/avatar-10.jpg&quot; class=&quot;avatar-lg img-fluid&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-grow-1 ms-3&quot;&gt;
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+            &lt;div class=&quot;flex-shrink-0&quot;&gt;
+            &lt;img src=&quot;assets/images/users/avatar-10.jpg&quot; class=&quot;avatar-lg img-fluid&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-grow-1 ms-3&quot;&gt;
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-lg-4&quot;&gt;
+        &lt;div class=&quot;d-flex align-items-end&quot;&gt;
+            &lt;div class=&quot;flex-shrink-0&quot;&gt;
+            &lt;img src=&quot;assets/images/users/avatar-10.jpg&quot; class=&quot;avatar-lg img-fluid&quot; alt=&quot;&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-grow-1 ms-3&quot;&gt;
+            This is some content from a media component. You can replace this with any content and adjust it as needed.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

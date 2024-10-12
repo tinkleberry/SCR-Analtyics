@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        @@include("partials/title-meta.html", {"title": "Video"})
+
+        <link href="assets/libs/prismjs/themes/prism.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/toolbar/prism-toolbar.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/prismjs/plugins/line-numbers/prism-line-numbers.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            @@include("partials/menu.html")
+
+            <!-- ============================================================== -->
+            
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        @@include("partials/page-title.html", {"pagetitle": "UI Elements", "title": "Video"})
+
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="d-flex align-items-center mb-0">
+                                            <div class="flex-grow-1">
+                                                <h4 class="card-title">Ratio Video 16:9 and 21:9</h4>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <div class="form-check form-switch form-switch-md">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        data-bs-toggle="collapse" data-bs-target="#RatioVideo">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-header -->
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <!-- 16:9 aspect ratio -->
+                                                <div class="ratio ratio-16x9 mb-3">
+                                                    <iframe
+                                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                                        title="YouTube video" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-6">
+                                                <!-- 16:9 aspect ratio -->
+                                                <div class="ratio ratio-16x9 mb-3">
+                                                    <iframe
+                                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                                        title="YouTube video" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-md-6">
+                                                <!-- 4:3 aspect ratio -->
+                                                <div class="ratio ratio-4x3 mb-3 mb-md-0">
+                                                    <iframe
+                                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                                        title="YouTube video" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <!-- 21:9 aspect ratio -->
+                                                <div class="ratio ratio-21x9 mb-0">
+                                                    <iframe
+                                                        src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                                                        title="YouTube video" allowfullscreen></iframe>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+
+                                        <div class="collapse" id="RatioVideo">
+                                            <div>
+                                                <div class="btn btn-clipboard" data-clipboard-action="copy"
+                                                    data-clipboard-target="#clipboardVideo"></div>
+                                                <pre class="language-markup rounded position-relative"
+                                                    style="max-height: 270px;">
+<code id="clipboardVideo">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;!-- 16:9 aspect ratio --&gt;
+        &lt;div class=&quot;ratio ratio-16x9 mb-3&quot;&gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/zpOULjyy-n8?rel=0&quot; title=&quot;YouTube video&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;!-- 16:9 aspect ratio --&gt;
+        &lt;div class=&quot;ratio ratio-16x9 mb-3&quot;&gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/zpOULjyy-n8?rel=0&quot; title=&quot;YouTube video&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- end col --&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;!-- 4:3 aspect ratio --&gt;
+        &lt;div class=&quot;ratio ratio-4x3 mb-3 mb-md-0&quot;&gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/zpOULjyy-n8?rel=0&quot; title=&quot;YouTube video&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;!-- 21:9 aspect ratio --&gt;
+        &lt;div class=&quot;ratio ratio-21x9 mb-0&quot;&gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/zpOULjyy-n8?rel=0&quot; title=&quot;YouTube video&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end col --&gt;
+&lt;/div&gt;&lt;!-- end row --&gt;</code>
+</pre>
+                                            </div>
+                                        </div>
+                                    </div><!-- end card-body -->
+                                </div><!-- end card -->
+                            </div><!-- end col -->
+                        </div><!-- end row -->
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                @@include("partials/footer.html")
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+
+        @@include("partials/vendor-scripts.html")
+
+        <!-- prismjs plugin -->
+        <script src="assets/libs/prismjs/prism.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+
+        <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+        <!-- Custom js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>
