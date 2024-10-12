@@ -1,0 +1,157 @@
+// 
+// Kanbanboard . scss
+// 
+
+
+// task
+
+.task-board{
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  align-items: stretch;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:vertical {
+    width: 12px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($dark, .2);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: $white; 
+  }
+}
+
+.task{
+  min-height: 186px;
+  &::after{
+    content: "There's no activity made";
+    position: absolute;
+    width: 54%;
+    text-align: center;
+    top: 168px;
+    padding: 6px;
+    align-self: center;
+    font-weight: 500;
+    z-index: -1;
+    
+  }
+  &::before {
+    content: "";   
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('../images/illustrator/file.png');
+    height: 168px;
+    width: 264px;
+    background-size:cover;
+    margin: 0 auto;
+  }
+}
+
+.task-list{
+  min-width: 280px;
+  white-space: normal;
+
+  @media (min-width: 576px) {
+    min-width: 377px;
+    width: 400;
+  }
+  
+  &:not(:last-child) {
+      margin-right: 20px;
+  }
+
+  .tasklist-content{
+    max-height: calc(100vh - 430px);
+  }
+
+  .task-box{
+      border: 1px solid $gray-300;
+      cursor: grab;
+      &:last-child{
+          margin-bottom: 0;
+      }
+  }
+}
+
+.gu-transit {
+    border: 1px dashed $gray-600 !important;
+    background-color: $gray-200 !important;
+}
+
+@media (max-width: 576px){
+  .tasklist-content{
+    max-height: calc(100vh - 150px) !important;
+  }
+}
+
+// Dropdown
+.dropdown-move {
+  &:hover {
+    >.dropdown-menu {
+        display: block;
+        right: 100%;
+        top: 0;
+    }
+  }
+}
+.dropdown-move:hover>.dropdown-menu>.dropdown:hover>.dropdown-menu {
+  display: block
+}
+
+// Edit Modal
+
+.attach-file{
+  position: relative;
+  cursor: pointer;
+  .attach-doc-list{
+    width: 150px;
+    height: auto;
+    .bg-overlay{
+      background-color: rgba($dark, 0);
+      transition: all 0.2s ease;
+    }
+    .attach-icon{
+      opacity: 0;
+    }
+    &:hover{
+      .bg-overlay{
+          background-color: rgba($dark, 0.7);
+      }
+      .attach-icon{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Dark-layout
+
+body[data-layout-mode="dark"] {
+  .task-board{
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten($gray-dark-200, 5%);
+    }
+    &::-webkit-scrollbar-track { 
+      background-color: $gray-dark-100;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active  {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}

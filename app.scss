@@ -1,0 +1,59 @@
+/*
+Template Name: Probic - Admin & Dashboard Template
+Author: Themesdesign
+Version: 1.0.0
+Website: https://themesdesign.in/
+Contact: themesdesign@gmail.in
+File: Main Css File
+*/
+
+//Fonts
+@import "custom/fonts/fonts";
+
+//Core files
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "./node_modules/bootstrap/scss/mixins.scss";
+@import "theme-light";
+@import "theme-dark";
+
+
+// Structure
+@import "custom/structure/general";
+@import "custom/structure/topbar";
+@import "custom/structure/page-head";
+@import "custom/structure/footer";
+@import "custom/structure/right-sidebar";
+@import "custom/structure/vertical";
+@import "custom/structure/horizontal-nav";
+@import "custom/structure/layouts";
+
+// Components
+@import "custom/components/avatar";
+@import "custom/components/alerts";
+@import "custom/components/accordion";
+@import "custom/components/helper";
+@import "custom/components/preloader";
+@import "custom/components/modals";
+@import "custom/components/forms";
+@import "custom/components/demos";
+
+
+// Plugins
+@import "custom/plugins/custom-scrollbar";
+@import "custom/plugins/choice";
+@import "custom/plugins/form-upload";
+@import "custom/plugins/responsive-table";
+@import "custom/plugins/datepicker";
+@import "custom/plugins/lightbox";
+@import "custom/plugins/prismjs";
+@import "custom/plugins/apexcharts";
+
+
+// Pages
+@import "custom/pages/authentication";
+@import "custom/pages/kanbanboard";
+@import "custom/pages/file-manager";
+@import "custom/pages/chat";
+@import "custom/pages/extras-pages";

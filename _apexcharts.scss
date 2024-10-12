@@ -1,0 +1,55 @@
+// //
+// // apexcharts.scss
+// //
+.apex-charts {
+
+    text {
+        fill: var(--#{$prefix}gray-500);
+    }
+}
+
+
+
+.apexcharts-gridline {
+    stroke: var(--#{$prefix}gray-200);
+}
+
+.apexcharts-legend-text {
+    color: var(--#{$prefix}gray-600) !important;
+  
+}
+
+.apexcharts-yaxis,
+.apexcharts-xaxis {
+    text {
+        fill:var(--#{$prefix}gray-500);
+    }
+
+    line {
+        stroke: var(--#{$prefix}gray-300);
+    }
+}
+
+.apexcharts-tooltip {
+    background-color: var(--#{$prefix}card-bg) !important;
+    border: 1px solid var(--#{$prefix}gray-300) !important;
+    box-shadow: 2px 2px 6px -4px var(--#{$prefix}gray-300) !important;
+
+    .apexcharts-tooltip-title {
+        background-color: var(--#{$prefix}gray-300) !important;
+        border-bottom: 1px solid var(--#{$prefix}gray-300) !important;
+    }
+}
+.apexcharts-xaxistooltip{
+    background-color: var(--#{$prefix}card-bg) !important;
+    color: var(--#{$prefix}gray-600) !important;
+    border: 1px solid var(--#{$prefix}gray-300) !important;
+}
+
+// donut_chart
+#donut_chart,
+#pie_chart{
+    .apexcharts-tooltip{
+        border: transparent !important;
+    }
+}

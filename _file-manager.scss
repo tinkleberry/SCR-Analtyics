@@ -1,0 +1,81 @@
+// 
+// File manager.scss
+//
+
+.filemanager-sidebar{
+
+    @media (min-width:767px) and (max-width:1199.98px){
+        min-width: 260px;
+        max-width: 260px;
+    }
+    
+    @media (min-width: 1200px){
+        min-width: 310px;
+        max-width: 310px;
+    }
+
+    @media (min-width: 1366px){
+        min-width: 340px;
+        max-width: 340px;
+    }
+}
+
+.categories-list{
+    padding: 4px 0;
+    li{
+        a{
+            display: block;
+            padding: 8px 12px;
+            color: $body-color;
+            font-weight: $font-weight-medium;
+        }
+        &.active{
+            a{
+                color: $primary;
+            }
+        }
+        ul{
+            padding-left: 14px;
+            li{
+                a{
+                    padding: 4px 12px;
+                    color: $text-muted;
+                    font-size: 13px;
+                    font-weight: $font-weight-normal;
+                }
+            }
+        }
+    }
+}
+
+.file-plan{
+    position: relative;
+    border: 1px solid $light;
+    padding: 10px 16px;
+    &:hover{
+      border: 1px solid rgba($primary, 0.7);
+      .plan-offer{
+        opacity: 1;
+      }
+    }
+  
+    .plan-offer{
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%) ;
+      opacity: 0;
+    }
+  }
+
+//   Dark layout
+
+  body[data-layout-mode="dark"] {
+    .file-plan{
+        border: 1px solid #043a5a;
+        &:hover{
+        border: 1px solid rgba($primary, 0.7);
+        
+        }
+    }
+  }

@@ -1,0 +1,178 @@
+// 
+// Extras pages.scss
+//
+
+// Employee page
+
+.profile-user {
+  position: relative;
+  display: inline-block;
+  .profile-photo-edit {
+      position: absolute;
+      right: 0/*rtl:auto*/;
+      left: auto/*rtl:0*/;
+      bottom: 0;
+      cursor: pointer;
+  }
+  .user-profile-img{
+      object-fit: cover;
+  }
+  .profile-img-file-input{
+      display: none;
+  }
+}
+
+// Tasks-list
+
+.tasks-list {
+    a {
+      display: block;
+      color: $gray-600;
+      line-height: 24px;
+      padding: 5px 10px;
+      font-weight: 500;
+      &.active, 
+      &:active,
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  
+.btn-custom{
+    color: $body-color;
+    border: 1px solid $gray-400 !important;
+    background-color: $white !important;
+  }
+
+.task-list-box{
+  cursor: grab;
+  .checklist.form-check .form-check-input:checked + .form-check-label {
+    text-decoration: line-through;
+    color: $gray-600;
+  }
+  .list-group-item{
+    border-left: 3px solid $primary !important;
+  }
+}
+  
+ 
+// Activities Pages
+
+
+.activity-wid{
+  border-left: 2px dashed $border-color;
+  margin-left: 16px;
+
+  .activity-list{
+      position: relative;
+      padding: 0 0 40px 30px;
+      .activity-icon{
+          position: absolute;
+          left: -16px;
+          top: 0px;
+          z-index: 9;
+      }
+
+      &:last-child{
+          padding-bottom: 0px;
+      }
+  }
+}
+
+@media (max-width: 570px) {
+  .activity-wid{
+      border-left: none;
+      margin-left: 0;
+      .activity-list{
+          padding-left: 0;
+          .activity-icon{
+              display: none;
+          }
+      }
+  }
+}
+  
+// Profile Pages
+
+.work-activity{
+  position: relative;
+  color: $gray-600;
+  padding-left: 5.5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 66px;
+    border-left: 1px solid rgba(3,142,220,.25);
+  }
+  .work-item {
+    position: relative;
+    border-bottom: 2px dashed $border-color;
+    margin-bottom: 14px;
+      &:last-of-type { 
+       padding-bottom: 0;
+       margin-bottom: 0; 
+       border: none;   
+      }
+       &::before, &::after {
+        position: absolute;
+        display: block;
+      }
+      &::before{
+        content: attr(data-date);
+        left: -157px;
+        top: -3px;
+        text-align: right;
+        font-weight: 500;    
+        color: $gray-600;
+        font-size: 12px;
+        min-width: 120px;
+      }
+      &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        left: -26px;
+        top: 3px;
+        background-color: $white;
+        border: 2px solid $primary;
+      }   
+    }
+  }
+
+  // grabbing Drag & Drop 
+  .gu-mirror{
+    cursor: grabbing;
+  }
+  
+  // Dark Layout
+
+  body[data-layout-mode="dark"] {
+
+    // activity
+    .activity-wid{
+      border-left: 2px dashed lighten($gray-dark-200,4%);
+      margin-left: 16px;
+    }
+
+    //btn custom
+
+    .btn-custom{
+      color: var(--#{$prefix}gray-400) !important;
+      border-color: #043a59 !important;
+      background-color: var(--#{$prefix}gray-200) !important;
+    }
+
+    .work-item {
+      border-bottom: 2px dashed $gray-dark-300;
+    }
+  }
+
+
+  // carousel
+  .carousel-caption{
+    bottom: 0;
+  }
